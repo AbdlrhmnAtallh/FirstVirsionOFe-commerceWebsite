@@ -2,18 +2,24 @@ const productList = document.getElementById('product-list');
 
 // Function to fetch product data from JSON file
 function fetchProducts() {
-  fetch('products.json')
-    .then(response => response.json())
-    .then(data => {
-      // Loop through products and create list items
-      data.forEach(product => {
-        const listItem = document.createElement('li');
-        listItem.innerHTML = `<a href="details.html?id=${product.id}">${product.name}</a>`;
-        productList.appendChild(listItem);
-      });
-    })
-    .catch(error => console.error(error));
-}
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        const productList = document.getElementById('product-list');
+        if (productList) {
+          // Loop through products and create list items
+          data.forEach(product => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `<a href="details.html?id=${product.id}">${product.name}</a>`;
+            productList.appendChild(listItem);
+          });
+        } else {
+          console.error("Element with id 'product-list' not found!");
+        }
+      })
+      .catch(error => console.error(error));
+  }
+  
 
 // Function to display product details based on ID from URL
 function showProductDetails() {
