@@ -1,21 +1,18 @@
 [
-    {
-      "id": 1,
-      "name": "Product 1",
-      "price": 100.00,
-      "description": "A detailed description of product 1"
-    },
-    {
-      "id": 2,
-      "name": "Product 2",
-      "price": 200.00,
-      "description": "A detailed description of product 2"
-    },
-    {
-        "id": 3,
-        "name": "Product 3",
-        "price": 300.00,
-        "description": "A detailed description of product 3"
-      }
-  ]
-  
+  {
+    "Id": 31,
+    "Name": "\u0645\u0646\u062A\u062C",
+    "Description": "\u0645\u0646\u062A\u062C \u0631\u0642\u0645 \u0648\u0627\u062D\u062F",
+    "Price": 33,
+    "ImagePath1": "781d9388281f4c36bf3648c60c619430.png",
+    "ImagePath2": null,
+    "ImagePath3": null,
+    "ImagePath4": null,
+    "ImagePath5": null,
+    "weight": null,
+    "ModelName": null,
+    "RelatedProducts": null,
+    "PriceAfterDiscount": null,
+    "ZoneAreas": null
+  }
+]
