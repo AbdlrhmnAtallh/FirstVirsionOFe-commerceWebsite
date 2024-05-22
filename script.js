@@ -1,24 +1,27 @@
 fetch("products.json")
-.then(function(response){
-   return response.json();
-})
-.then(function(products){
-   let placeholder = document.querySelector("#data-output");
-   let out = "";
-   for(let product of products){
-      out += `
-         <tr>
-            <td>${product.name}</td>
-            <td>${product.price}</td>
-            <td>${product.description}</td>
-         </tr>
-      `;
-   }
- 
-   placeholder.innerHTML = out;
-});
-
-
+    .then(function(response) {
+        if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+    })
+    .then(function(products) {
+        let placeholder = document.querySelector("#data-output");
+        let out = "";
+        for (let product of products) {
+            out += `
+                <tr>
+                    <td>${product.Name}</td>
+                    <td>${product.Price}</td>
+                    <td>${product.Description}</td>
+                </tr>
+            `;
+        }
+        placeholder.innerHTML = out;
+    })
+    .catch(function(error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    });
 
 
 
