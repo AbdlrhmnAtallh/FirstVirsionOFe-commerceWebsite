@@ -16,22 +16,6 @@
     "ZoneAreas": null
   },
   {
-    "Id": 33,
-    "Name": "منتج رقم اتنين",
-    "Description": "تجربة المنتج ",
-    "Price": 100,
-    "ImagePath1": "Getar.jpg",
-    "ImagePath2": null,
-    "ImagePath3": null,
-    "ImagePath4": null,
-    "ImagePath5": null,
-    "weight": null,
-    "ModelName": null,
-    "RelatedProducts": null,
-    "PriceAfterDiscount": null,
-    "ZoneAreas": null
-  },
-  {
     "Id": 34,
     "Name": "peanuts butter",
     "Description": "abuauf",
