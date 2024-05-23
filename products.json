@@ -16,38 +16,6 @@
     "ZoneAreas": null
   },
   {
-    "Id": 31,
-    "Name": "منتج",
-    "Description": "منتج رقم واحد",
-    "Price": 33,
-    "ImagePath1": "781d9388281f4c36bf3648c60c619430.png",
-    "ImagePath2": null,
-    "ImagePath3": null,
-    "ImagePath4": null,
-    "ImagePath5": null,
-    "weight": null,
-    "ModelName": null,
-    "RelatedProducts": null,
-    "PriceAfterDiscount": null,
-    "ZoneAreas": null
-  },
-  {
-    "Id": 32,
-    "Name": "منتج جديد ",
-    "Description": "من البرنامج الخاص ب عبدالرحمن ",
-    "Price": 1400,
-    "ImagePath1": "Getar.jpg",
-    "ImagePath2": null,
-    "ImagePath3": null,
-    "ImagePath4": null,
-    "ImagePath5": null,
-    "weight": null,
-    "ModelName": null,
-    "RelatedProducts": null,
-    "PriceAfterDiscount": null,
-    "ZoneAreas": null
-  },
-  {
     "Id": 33,
     "Name": "منتج رقم اتنين",
     "Description": "تجربة المنتج ",
