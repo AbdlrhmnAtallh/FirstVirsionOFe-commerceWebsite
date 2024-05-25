@@ -1,18 +1,1 @@
-[
-  {
-    "Id": 40,
-    "Name": "منتج سيتم تعديل ",
-    "Description": "منتج لتجربة خاصية التعديل|| تم التعديل ",
-    "Price": 12011,
-    "ImagePath1": "photo_5881934128662823016_y.jpg",
-    "ImagePath2": null,
-    "ImagePath3": null,
-    "ImagePath4": null,
-    "ImagePath5": null,
-    "weight": null,
-    "ModelName": null,
-    "RelatedProducts": null,
-    "PriceAfterDiscount": null,
-    "ZoneAreas": null
-  }
-]
+[]
