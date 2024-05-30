@@ -11,9 +11,12 @@ fetch("products.json")
         for (let product of products) {
             out += `
                 <tr>
+                    <td>${product.Id}</td>
                     <td>${product.Name}</td>
-                    <td>${product.Price}</td>
                     <td>${product.Description}</td>
+                    <td>${product.Price}</td>
+                    <td>${product.ImagePath1}</td>
+                    <td>${product.PriceAfterDiscount}</td>
                 </tr>
             `;
         }
