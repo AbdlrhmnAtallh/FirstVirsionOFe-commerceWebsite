@@ -206,5 +206,21 @@
     "RelatedProducts": null,
     "PriceAfterDiscount": null,
     "ZoneAreas": null
+  },
+  {
+    "Id": 87,
+    "Name": "Delete me",
+    "Description": "sa",
+    "Price": 222,
+    "ImagePath1": "tempPic.png",
+    "ImagePath2": null,
+    "ImagePath3": null,
+    "ImagePath4": null,
+    "ImagePath5": null,
+    "weight": null,
+    "ModelName": null,
+    "RelatedProducts": null,
+    "PriceAfterDiscount": null,
+    "ZoneAreas": null
   }
 ]
