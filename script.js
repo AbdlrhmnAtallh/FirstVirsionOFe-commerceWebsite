@@ -1,11 +1,11 @@
 fetch("products.json")
-    .then(function(response) {
+    .then(function (response) {
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         return response.json();
     })
-    .then(function(products) {
+    .then(function (products) {
         let placeholder = document.querySelector("#data-output");
         let out = "";
         for (let product of products) {
@@ -22,11 +22,22 @@ fetch("products.json")
         }
         placeholder.innerHTML = out;
     })
-    .catch(function(error) {
+    .catch(function (error) {
         console.error('There has been a problem with your fetch operation:', error);
     });
 
 
+//########## Card
+
+$(document).ready(function () {
+    $('.buy').click(function () {
+        $('.bottom').addClass("clicked");
+    });
+
+    $('.remove').click(function () {
+        $('.bottom').removeClass("clicked");
+    });
+});
 
 
 
@@ -58,7 +69,7 @@ fetch("products.json")
 //       })
 //       .catch(error => console.error(error));
 //   }
-  
+
 
 // // Function to display product details based on ID from URL
 // function showProductDetails() {

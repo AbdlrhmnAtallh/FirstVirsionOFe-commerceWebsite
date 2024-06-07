@@ -4,14 +4,68 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Details</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-  <!-- <h2>Product Details</h2>
-  <p id="product-name"></p>
-  <p id="product-price"></p>
-  <p id="product-description"></p> -->
+  <div class="product-list" id="product-list">
+    <!-- Product cards will be appended here -->
+</div>
 
- 
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        fetch('products.json')
+            .then(function(response) {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok ' + response.statusText);
+                }
+                return response.json();
+            })
+            .then(function(products) {
+                let productList = document.getElementById('product-list');
 
-  <script src="script.js"></script>  </body>
+                products.forEach(function(product) {
+                    // Create a new product card
+                    let productCard = document.createElement('div');
+                    productCard.className = 'product-card';
+
+                    productCard.innerHTML = `
+                        <div class="details">
+                            <h1>${product.Name}</h1>
+                            <p>${product.Price}</p>
+                        </div>
+                        <div class="buy"><i class="material-icons">add_shopping_cart</i></div>
+                        <div class="done"><i class="material-icons">done</i></div>
+                        <div class="details">
+                            <p>${product.Description}</p>
+                            <p>Price After Discount: ${product.PriceAfterDiscount}</p>
+                            <p>Weight: ${product.Weight}</p>
+                            <p>Id: ${product.Id}</p>
+                            <p>Image Path 1: ${product.ImagePath1}</p>
+                            <p>Image Path 2: ${product.ImagePath2}</p>
+                        </div>
+                        <div class="remove"><i class="material-icons">clear</i></div>
+                    `;
+
+                    productList.appendChild(productCard);
+                });
+
+                // Add event listeners to dynamically added elements
+                $('.buy').click(function() {
+                    $(this).closest('.product-card').addClass('clicked');
+                });
+
+                $('.remove').click(function() {
+                    $(this).closest('.product-card').removeClass('clicked');
+                });
+            })
+            .catch(function(error) {
+                console.error('There has been a problem with your fetch operation:', error);
+            });
+    });
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body> 
 </html>
