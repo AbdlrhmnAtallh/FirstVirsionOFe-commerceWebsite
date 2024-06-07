@@ -4,6 +4,8 @@ html, body {
   padding: 25px;
   margin: 0;
   height: 100%;
+  max-width: 900px; /* Adjust as needed */
+  margin: 0 auto; /* Center the content horizontally */
 }
 
 .product-list-wrapper {
@@ -252,3 +254,12 @@ html, body {
   }
 }
 
+
+
+.product-list-wrapper {
+  overflow-x: auto;
+  white-space: nowrap; /* Prevent line breaks */
+  padding: 25px 0;
+  width: calc(100vw - 50px); /* Adjust width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
