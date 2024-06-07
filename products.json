@@ -14,5 +14,37 @@
     "RelatedProducts": null,
     "PriceAfterDiscount": null,
     "ZoneAreas": null
+  },
+  {
+    "Id": 91,
+    "Name": "iPhone",
+    "Description": "iphone 6s",
+    "Price": 4000,
+    "ImagePath1": "photo_5881934128662823014_y.jpg",
+    "ImagePath2": null,
+    "ImagePath3": null,
+    "ImagePath4": null,
+    "ImagePath5": null,
+    "weight": null,
+    "ModelName": "Apple",
+    "RelatedProducts": null,
+    "PriceAfterDiscount": null,
+    "ZoneAreas": null
+  },
+  {
+    "Id": 92,
+    "Name": "PC",
+    "Description": "hp",
+    "Price": 5000,
+    "ImagePath1": "photo_5881934128662823014_y.jpg",
+    "ImagePath2": null,
+    "ImagePath3": null,
+    "ImagePath4": null,
+    "ImagePath5": null,
+    "weight": null,
+    "ModelName": "hp",
+    "RelatedProducts": null,
+    "PriceAfterDiscount": null,
+    "ZoneAreas": null
   }
 ]
